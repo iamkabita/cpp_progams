@@ -14,32 +14,31 @@ int withdraw(int balance,int password)
 	    			cout<<"Transaction Successful\n";
 	    			balance = balance - amount;
 	    			cout<<"Your current balance is "<<balance;
-	    			return (balance);
 				}
 				else
 				{
 					cout<<"Please enter correct pin";
 				}
+				return (balance);
 }
 
-int checkBalance(int balance,int password, int amount)
+int checkBalance(int balance,int password)
 {
 	int pin;
 		cout<<"Enter your pin  ";
 				cin>>pin;
 				if(pin == password)
 				{
-					balance = balance - amount;
 					cout<<"Your current Balance is "<<balance;
-					return (balance);
 				}
 				else
 				{
 					cout<<"Please enter correct pin";
 				}
+				return (balance);
 }
 
-int changePin(int balance,int password)
+int changePin(int password)
 {
 	int pin,newpin,conformpin;
 	cout<<"Enter your pin  ";
@@ -52,9 +51,8 @@ int changePin(int balance,int password)
 				    cin>>conformpin;
 				    if(newpin == conformpin)
 				    {
-				    	cout<<"Your New pin is "<<newpin;
-				    	return (newpin);
-				    
+				    	cout<<"Your New pin is "<<newpin;	
+						return newpin;			    
 					}
 					else
 					{
@@ -66,12 +64,13 @@ int changePin(int balance,int password)
 				{
 					cout<<"Please enter correct pin";
 				}
+				return (password);
 	
 }
                 
 int main()
 {
-	int choice,end=1,balance=50000,password=123,amount = 0;
+	int choice,end=1,balance=50000,password=123;
 	while(end)
 	{
 		cout<<"\n1. Withdraw amount\n";
@@ -86,10 +85,10 @@ int main()
 	    		balance = withdraw(balance,password);
 				break;
 			case 2:
-			    balance = checkBalance(balance,password,amount);
+			    balance = checkBalance(balance,password);
 				break;
 			case 3:
-				password = changePin(balance,password);
+				password = changePin(password);
 				break;
 			case 4:
 				end = 0;
