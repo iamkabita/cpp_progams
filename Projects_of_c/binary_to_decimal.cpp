@@ -1,13 +1,11 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-//Binary to decimal
-int main()
+//Binary to decimal(Function)
+int binary(int no)
 {
-	int n,no,count=0,i,x,sum=0,t=1;
-	cout<<"Enter a binary number  ";
-	cin>>no;
-	n=no;
+	int n,count=0,i,x,sum=0,t=1;
+    n=no;
 	while(n>0)
 	{
 		n = n/10;
@@ -21,8 +19,18 @@ int main()
 		    t =t*2;
 		    n = n/10;
 		}
-	cout<<"Decimal number of "<<no<<" is "<<sum;
+	return (sum);
+}
+
+int main()
+{
+	int no,sum;
+	cout<<"Enter a binary number  ";
+	cin>>no;
+	
+	cout<<"Decimal number of "<<no<<" is "<<binary(no);
 	getch();
+	return 0;
 
 		
 	
