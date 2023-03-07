@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
+// Write a c++ program to print number triangle.
 int main()
 {
 	int i,j,r,d;
@@ -14,7 +14,7 @@ int main()
 		{
 			if(j>=r+1-i&&j<=r-1+i)
 			{
-				cout<<d;
+				cout<<" "<<d;
 				if(j < r)
 			    {
 				    d++;
@@ -26,7 +26,7 @@ int main()
 			}
 			else
 			{
-				cout<<" ";
+				cout<<"  ";
 			}
 			
 		}
