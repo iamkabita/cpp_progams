@@ -7,7 +7,7 @@ void Even(int n)
 	if(n>0)
 	{
 		Even (n-1);
-	    cout<<" "<<n*2;
+	    cout<<" "<<n*2; //cout<<"Even numbers are " <<n*2; This is wrong because if we write like this then print (Even numbers are) n times with even number. 
 	}
 }
 void Odd(int n)
