@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
+// Write a c++ program to print alphabetic triangle.
 int main()
 {
 	int i,j,r;
