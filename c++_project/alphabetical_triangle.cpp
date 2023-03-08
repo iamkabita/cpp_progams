@@ -16,7 +16,7 @@ int main()
 			if(j>=r+1-i&&j<=r-1+i)
 			{
 				cout<<(char)alpha;
-		 	if(j>r)
+		 	if(j<r)
 				{
 					(char)alpha++;
 				}
