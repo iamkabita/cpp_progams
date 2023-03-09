@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
+// Write a c++ program to identify number greater or less than 0,5 and 10. 
 int main()
 {
 	int n;
