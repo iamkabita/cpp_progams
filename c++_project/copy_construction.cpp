@@ -8,7 +8,7 @@ class Dummy
 		int a,b;
 		int *p;
 	public:
-		Dummy()
+		Dummy()  // constructor
 		{
 			p = new int;
 		}
@@ -23,13 +23,13 @@ class Dummy
 			cout<<"\na = "<<a<<"\nb = "<<b;
 		}
 		
-		Dummy(Dummy & d)
+		Dummy(Dummy & d) //copy constructor
 		{
 			a = d.a;  b = d.b;
 			p = new int;
 			*p = *(d.p);
 		}
-		~Dummy()
+		~Dummy()  // Distractor
 		{
 			delete p;
 		}
