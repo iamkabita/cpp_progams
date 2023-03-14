@@ -38,7 +38,7 @@ int main()
 {
 	Dummy d1;
 	d1.setData(3,4,5);
-	Dummy d2 = d1;
+	Dummy d2(d1);
 	d2.showData();
 	getch();
 	return 0;
