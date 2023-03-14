@@ -5,7 +5,7 @@ using namespace std;
 class Account
 {
 	int balance;          //instance member variable
-	static float ROI;     //static member variable
+	static float ROI;     //static member variable   static variables are by default initialized to zero.
 	public:
 		void setBalance(int b)
 		{
