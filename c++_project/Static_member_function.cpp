@@ -20,7 +20,6 @@ float Account :: ROI=10;
 int main()
 {
 	Account :: setRoi (float(10));
-	cout<<"ROI = "<<setRoi;
 	getch();
 	return 0;
 }
