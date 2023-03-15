@@ -9,11 +9,11 @@ int power(int n, int p)
 	{
 		return 1;
 	}
-	return (n*(power(n,(p-1))));
+	return (n*power(n,(p-1)));
 }
 int main()
 {
-	int n,p,i,sum=1;
+	int n,p;
 	cout<<"Enter a number and power of number"<<endl;
 	cin>>n>>p;
 	cout<<p<<" Power of "<<n<<" is "<<power(n,p);
