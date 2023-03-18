@@ -37,7 +37,7 @@ class Time
 	private:
 		int hr,min,sec;
 	public :
-		void setTime(int h, int mi)
+		int setTime(int h, int mi)
 		{
 			if(h<=24)
 			{
@@ -60,7 +60,7 @@ class Time
 			}
 			else
 			{
-			    hr = 24;
+			    return 0;
 			}
 			
 		}
@@ -89,6 +89,7 @@ int main()
 	cout<<"Time : ";
 	cin>>h>>mi;
 	d1.setdate(d,m,y);
+	
 	d1.getdate();
 	t1.setTime(h,mi);
 	t1.getTime();	
