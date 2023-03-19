@@ -88,8 +88,7 @@ int main()
 	cin>>d>>m>>y;
 	cout<<"Time : ";
 	cin>>h>>mi;
-	d1.setdate(d,m,y);
-	
+	d1.setdate(d,m,y);	
 	d1.getdate();
 	t1.setTime(h,mi);
 	t1.getTime();	
