@@ -10,6 +10,11 @@ class A
 		{
 			a = k;
 		}
+		int transferData()
+		{
+			return a;
+		}
+		
 };
 class B:public A
 {
@@ -19,10 +24,17 @@ class B:public A
 		{
 			b = y;	
 		}
+		void getdata()
+		{
+			cout<<"a = "<<transferData()<<endl;
+			cout<<"b = "<<b;
+		}
 		
 };
 int main()
 {
 	B obj(2,3);
+	obj.getdata();
+	return 0;
 	
 }
