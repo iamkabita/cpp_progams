@@ -24,10 +24,14 @@ class B:public A
 		{
 			b = y;	
 		}
+		int transferB()
+		{
+			return b;
+		}
 		void getdata()
 		{
 			cout<<"a = "<<transferData()<<endl;
-			cout<<"b = "<<b;
+			cout<<"b = "<<b<<endl;
 		}
 		
 };
@@ -35,6 +39,7 @@ int main()
 {
 	B obj(2,3);
 	obj.getdata();
+	cout<<"Sum of a and b is "<<obj.transferData()+obj.transferB();	
 	return 0;
 	
 }
