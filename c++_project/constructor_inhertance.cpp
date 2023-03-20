@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
+// Write a c++ programe using parameterized constructor to print sum of two numbers.
 class A
 {
 	int a;
