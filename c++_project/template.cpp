@@ -2,7 +2,7 @@
 #include<conio.h>
 using namespace std;
 
-template <class X>
+template <class X >
 X Big(X a, X b)
 {
 	if(a>b)
@@ -17,7 +17,7 @@ X Big(X a, X b)
 int main()
 {
 	cout<<Big(5,7)<<endl;
-	cout<<Big(4.3 , 5.4);
+	cout<<Big(4.3 , 4.4);
 	getch();
 	return 0;
 }
