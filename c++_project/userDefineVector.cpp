@@ -1,11 +1,9 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
 
 class Vector
-{	
-	public:
-		int *arr =Null;
+{	public:
+		int *arr = NULL;
 	    int length = 0;
 	
 		Vector()
@@ -14,7 +12,7 @@ class Vector
 		}
 		void push_back(int value)
 		{
-			int temp_arr = new int[length + 1];
+			int *temp_arr = new int[length + 1];
 			for(int i = 0;i<length;i++)
 			{
 				temp_arr[i]=arr[i];
@@ -25,9 +23,9 @@ class Vector
 		}
 		void show_arr()
 		{
-			for(int i=0;i<=length;i++)
+			for(int i=0;i<length;i++)
 			{
-				cout<<temp_arr[i];
+				cout<<arr[i]<<" ";
 			}
 			cout<<endl;
 		}
@@ -40,7 +38,5 @@ class Vector
 		array.push_back(40);
 		array.push_back(50);
 		array.show_arr();
-		getch();
 		return 0;
-		
 	}
