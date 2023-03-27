@@ -5,14 +5,14 @@ using namespace std;
 int main()
 {
 	int i,j,r,k;
-	cout<<"Enter number of row  ";
-	cin>>r;
-	for(i=1;i<=r;i++)
+	//cout<<"Enter number of row  ";
+	//cin>>r;
+	for(i=1;i<=4;i++)
 	{
-		for(j=1;j<=2*r-1;j++)
+		for(j=1;j<=7;j++)
 		{
 			k=1;
-			if(j>=r+i&&j<=r-i)
+			if(j>=5-i&&j<=3+i)
 			{
 				cout<<k<<" ";
 			}
@@ -20,7 +20,14 @@ int main()
 			{
 				cout<<"  ";
 			}
-			k++;			
+			if(j>4)
+			{
+				k--;
+			}
+			else
+			{
+				k++;
+			}		
 		}
 		cout<<endl;
 	}
