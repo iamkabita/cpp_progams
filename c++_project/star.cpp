@@ -4,30 +4,31 @@ using namespace std;
 
 int main()
 {
-	int i,j,r,k;
-	//cout<<"Enter number of row  ";
-	//cin>>r;
-	for(i=1;i<=4;i++)
+	int i,j,r,k=1;
+	cout<<"Enter number of row  ";
+	cin>>r;
+	for(i=1;i<=r;i++)
 	{
-		for(j=1;j<=7;j++)
+		k =1;
+		for(j=1;j<=2*r-1;j++)
 		{
-			k=1;
-			if(j>=5-i&&j<=3+i)
+			if(j>=r+1-i&&j<=r-1+i)
 			{
 				cout<<k<<" ";
+				if(j<r)
+			      {
+				    k++;
+			      }
+			    else
+			      {
+				     k--;
+			      }		
 			}
 			else
 			{
 				cout<<"  ";
 			}
-			if(j>4)
-			{
-				k--;
-			}
-			else
-			{
-				k++;
-			}		
+			
 		}
 		cout<<endl;
 	}
