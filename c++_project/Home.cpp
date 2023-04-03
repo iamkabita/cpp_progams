@@ -142,7 +142,7 @@ int main()
 		     cout<<endl;
 		 }
 	gotoxy(x,y);
-	cout<<"('.'))))))))))))))}";
+	cout<<"[j(jj)(jj)(jj)(jj]";
 	//gotoxy(a,b);
 	//cout<<"L L";
 	
@@ -294,10 +294,12 @@ int main()
 		       }
 		     cout<<endl;
 	        }
+	    cout<<endl;
+	    cout<<"|_O_|"<<endl;
+	    cout<<" l l"<<endl;
 	     gotoxy(x,y);
-	    cout<<"('.'))))))))))))))}";
-        //gotoxy(a,b);
-	    //cout<<"L L";
-	}
+	    cout<<"[j(jj)(jj)(jj)(jj]";
+    }
+	    
 	return 0;
 }
