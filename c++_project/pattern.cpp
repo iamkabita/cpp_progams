@@ -9,7 +9,7 @@ int main()
 	{
 		for(j=1;j<=13;j++)
 		{
-			
+			if(j)
 		}
 	}
 }
