@@ -21,20 +21,20 @@ int main()
 		k=n;
 		for(j=1;j<=2*n-1;j++)
 		{
-			if(j>=r&&j<=8-r)
+			if(j>=r&&j<=(2*n)-r)
 			{
-				cout<<k;
+				cout<<k<<" ";
 			}
 			else
 			{
 				if(j>n)
 				{
 					k++;
-					cout<<k;
+					cout<<k<<" ";
 				}
 				else
 				{
-					cout<<k;
+					cout<<k<<" ";
 					k--;
 				}
 			}
