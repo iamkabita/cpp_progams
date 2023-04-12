@@ -2,7 +2,7 @@
 #include<conio.h>
 using namespace std;
 // Write a function to find sum of array elements
-//find index of greatest value elements in an array
+
 int sum(int A[], int size)
 {
 	int i,s;
