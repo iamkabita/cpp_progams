@@ -1,7 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-
+// Write a function to rotate an array element by one position towards right.
 void rotateRight(int A[],int size)
 {
 	int i,temp;
