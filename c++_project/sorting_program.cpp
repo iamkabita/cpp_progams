@@ -23,4 +23,18 @@ void increase(int A[],int size)
 	}
 	
 }
-
+int main()
+{
+	int i,arr[]={12,38,34,90,74,7,100,48,23,56,34};
+	for(i=0;i<11;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+	cout<<endl;
+	increase(arr,11);
+	for(i=0;i<11;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+	return 0;
+}
