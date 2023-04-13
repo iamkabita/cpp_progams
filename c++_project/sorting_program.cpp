@@ -2,6 +2,8 @@
 #include<conio.h>
 using namespace std;
 // Write a function to arrange the numbers of array in acsending order.
+// sorting is the predefine function.It is used arrange the numbers acsending order.
+//I made sorting finction(increase) user define.
 void increase(int A[],int size)
 {
 	int i,j,temp;
@@ -25,14 +27,23 @@ void increase(int A[],int size)
 }
 int main()
 {
-	int i,arr[]={12,38,34,90,74,7,100,48,23,56,34};
-	for(i=0;i<11;i++)
+	int n,i;
+	cout<<"Enter size of array ";
+	cin>>n;
+	int arr[n];
+	cout<<"Enter numbers ";
+	for(i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
+	cout<<endl;
+	for(i=0;i<n;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
 	cout<<endl;
-	increase(arr,11);
-	for(i=0;i<11;i++)
+	increase(arr,n);
+	for(i=0;i<n;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
