@@ -20,6 +20,7 @@ void rotateN(int A[],int size,int n)
 		rotateRight(A,size);
 	}
 }
+
 int main()
 {
 	int i,a[]={45,89,41,90,78,12,93,33,57,29,56};
