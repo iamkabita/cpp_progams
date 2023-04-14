@@ -4,10 +4,12 @@ using namespace std;
 
 int main()
 {
-	int i,j,k=0;
-	for(i=1;i<=9;i++)
+	int i,j,k=0,r;
+	cout<<"Enter odd number of row ";
+	cin>>r;
+	for(i=1;i<=r;i++)
 	{
-		if(i<=5)
+		if(i<=r/2+1)
 		{
 			k++;
 		}
@@ -15,9 +17,9 @@ int main()
 		{
 			k--;
 		}
-		for(j=1;j<=9;j++)
+		for(j=1;j<=r;j++)
 		{
-			if(j<=6-k||j>=4+k)
+			if(j<=(r/2)+2-k||j>=(r/2)+k)
 			{
 				cout<<"* ";
 			}
